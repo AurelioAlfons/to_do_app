@@ -47,39 +47,83 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: Center(
-          child: Container(
-            width: 300,
-            height: 300,
-            decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 233, 11, 56),
-                borderRadius: BorderRadius.circular(20)),
-            padding: const EdgeInsets.all(25),
-            child: const Column(
-              children: [
-                Center(
-                  child: Text(
-                    'Hello World',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold),
+        body: Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(25.0),
+              child: Column(
+                children: [
+                  // ignore: sized_box_for_whitespace
+                  Container(
+                    height: 200,
+                    width: 200,
+                    color: Colors.amber,
                   ),
-                ),
-                // Use SizedBox to add a space
-                SizedBox(
-                  height: 60,
-                ),
-                Center(
-                  child: Icon(
-                    Icons.favorite,
-                    color: Colors.white,
-                    size: 80,
+                  const SizedBox(
+                    height: 30,
                   ),
-                )
-              ],
+                  Container(
+                    height: 200,
+                    width: 200,
+                    color: Colors.amber,
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    height: 200,
+                    width: 200,
+                    color: Colors.amber,
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    height: 200,
+                    width: 200,
+                    color: Colors.amber,
+                  ),
+                ],
+              ),
             ),
-          ),
+            Padding(
+              padding: const EdgeInsets.all(25.0),
+              child: Column(
+                children: [
+                  // ignore: sized_box_for_whitespace
+                  Container(
+                    height: 200,
+                    width: 200,
+                    color: Colors.amber,
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    height: 200,
+                    width: 200,
+                    color: Colors.amber,
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    height: 200,
+                    width: 200,
+                    color: Colors.amber,
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    height: 200,
+                    width: 200,
+                    color: Colors.amber,
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
