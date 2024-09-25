@@ -93,6 +93,7 @@ class MyApp extends StatelessWidget {
                     hintStyle: TextStyle(
                       color: Color.fromARGB(255, 69, 69, 69),
                     ),
+                    //
                     // Search Icon
                     prefixIcon: Icon(
                       Icons.search,
@@ -131,6 +132,9 @@ class MyApp extends StatelessWidget {
                           height: 160,
                           width: 160,
                           decoration: BoxDecoration(
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/images/Evee1.jpg'),
+                                  fit: BoxFit.cover),
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
                         ),
@@ -144,6 +148,9 @@ class MyApp extends StatelessWidget {
                           height: 160,
                           width: 160,
                           decoration: BoxDecoration(
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/images/Evee2.jpg'),
+                                  fit: BoxFit.cover),
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
                         ),
@@ -157,6 +164,9 @@ class MyApp extends StatelessWidget {
                           height: 160,
                           width: 160,
                           decoration: BoxDecoration(
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/images/Evee3.jpg'),
+                                  fit: BoxFit.cover),
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
                         ),
@@ -179,6 +189,9 @@ class MyApp extends StatelessWidget {
                           height: 160,
                           width: 160,
                           decoration: BoxDecoration(
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/images/Billy1.jpg'),
+                                  fit: BoxFit.cover),
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
                         ),
@@ -192,6 +205,9 @@ class MyApp extends StatelessWidget {
                           height: 160,
                           width: 160,
                           decoration: BoxDecoration(
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/images/Billy2.jpg'),
+                                  fit: BoxFit.cover),
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
                         ),
@@ -205,6 +221,10 @@ class MyApp extends StatelessWidget {
                           height: 160,
                           width: 160,
                           decoration: BoxDecoration(
+                              image: const DecorationImage(
+                                  image:
+                                      AssetImage('assets/images/Billy3.jpeg'),
+                                  fit: BoxFit.cover),
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
                         ),
