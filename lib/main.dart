@@ -47,81 +47,75 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: Row(
+        body: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(25.0),
-              child: Column(
-                children: [
-                  // ignore: sized_box_for_whitespace
-                  Container(
-                    height: 200,
-                    width: 200,
-                    color: Colors.amber,
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 25, right: 10),
+                  child: Column(
+                    children: [
+                      // ignore: sized_box_for_whitespace
+                      Container(
+                        height: 200,
+                        width: 200,
+                        color: Colors.amber,
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      Container(
+                        height: 200,
+                        width: 200,
+                        color: Colors.amber,
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      Container(
+                        height: 200,
+                        width: 200,
+                        color: Colors.amber,
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                    ],
                   ),
-                  const SizedBox(
-                    height: 30,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(25.0),
+                  child: Column(
+                    children: [
+                      // ignore: sized_box_for_whitespace
+                      Container(
+                        height: 200,
+                        width: 200,
+                        color: Colors.amber,
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      Container(
+                        height: 200,
+                        width: 200,
+                        color: Colors.amber,
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      Container(
+                        height: 200,
+                        width: 200,
+                        color: Colors.amber,
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                    ],
                   ),
-                  Container(
-                    height: 200,
-                    width: 200,
-                    color: Colors.amber,
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                    height: 200,
-                    width: 200,
-                    color: Colors.amber,
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                    height: 200,
-                    width: 200,
-                    color: Colors.amber,
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(25.0),
-              child: Column(
-                children: [
-                  // ignore: sized_box_for_whitespace
-                  Container(
-                    height: 200,
-                    width: 200,
-                    color: Colors.amber,
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                    height: 200,
-                    width: 200,
-                    color: Colors.amber,
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                    height: 200,
-                    width: 200,
-                    color: Colors.amber,
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                    height: 200,
-                    width: 200,
-                    color: Colors.amber,
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
           ],
         ),
