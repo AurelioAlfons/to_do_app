@@ -125,8 +125,8 @@ class MyApp extends StatelessWidget {
                         //
                         // #1 box
                         Container(
-                          height: 170,
-                          width: 170,
+                          height: 160,
+                          width: 160,
                           decoration: BoxDecoration(
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
@@ -138,8 +138,8 @@ class MyApp extends StatelessWidget {
                         //
                         // // #2 box
                         Container(
-                          height: 170,
-                          width: 170,
+                          height: 160,
+                          width: 160,
                           decoration: BoxDecoration(
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
@@ -151,8 +151,8 @@ class MyApp extends StatelessWidget {
                         //
                         // #3 box
                         Container(
-                          height: 170,
-                          width: 170,
+                          height: 160,
+                          width: 160,
                           decoration: BoxDecoration(
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
@@ -173,8 +173,8 @@ class MyApp extends StatelessWidget {
                         //
                         // #4 box
                         Container(
-                          height: 170,
-                          width: 170,
+                          height: 160,
+                          width: 160,
                           decoration: BoxDecoration(
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
@@ -186,8 +186,8 @@ class MyApp extends StatelessWidget {
                         //
                         // #5 box
                         Container(
-                          height: 170,
-                          width: 170,
+                          height: 160,
+                          width: 160,
                           decoration: BoxDecoration(
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
@@ -199,8 +199,8 @@ class MyApp extends StatelessWidget {
                         //
                         // #6 box
                         Container(
-                          height: 170,
-                          width: 170,
+                          height: 160,
+                          width: 160,
                           decoration: BoxDecoration(
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
