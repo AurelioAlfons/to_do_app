@@ -107,9 +107,12 @@ class MyApp extends StatelessWidget {
 
               // Test out the list view
               Container(
-                height: 300,
+                height: 350,
                 width: 350,
                 decoration: BoxDecoration(
+                    image: const DecorationImage(
+                        image: AssetImage('assets/icon/dog.png'),
+                        fit: BoxFit.cover),
                     color: Colors.amber,
                     borderRadius: BorderRadius.circular(20)),
               ),
