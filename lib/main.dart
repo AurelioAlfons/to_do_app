@@ -49,6 +49,28 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: [
+            // ignore: avoid_unnecessary_containers
+            const Padding(
+              padding: EdgeInsets.only(top: 30, left: 20, right: 20),
+              // ignore: avoid_unnecessary_containers
+              child: Material(
+                  elevation: 5,
+                  borderRadius: BorderRadius.all(Radius.circular(30)),
+                  child: TextField(
+                    decoration: InputDecoration(
+                        hoverColor: Colors.white,
+                        fillColor: Colors.white,
+                        filled: true,
+                        hintText: 'Search item',
+                        border: OutlineInputBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(30))),
+                        prefixIcon: Icon(
+                          Icons.search,
+                          color: Colors.white,
+                        )),
+                  )),
+            ),
             Row(
               children: [
                 Padding(
