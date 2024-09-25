@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 
+// Void => Returns nothing
 void main() {
   runApp(const MyApp());
 }
