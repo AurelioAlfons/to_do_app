@@ -14,8 +14,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // Remove debug banner
       debugShowCheckedModeBanner: false,
+
+      // Scaffold layout
       home: Scaffold(
+        // Bg Color
         backgroundColor: const Color.fromARGB(255, 96, 92, 191),
 
         // AppBar
@@ -214,6 +218,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
 
+        // Bottom NavBar
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor:
               const Color(0xFF6C04FF), // Change this to your preferred color
