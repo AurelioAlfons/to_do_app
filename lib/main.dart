@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
             child: Text(
               '🐶Doggies Gallery🐲',
               style: TextStyle(
-                  fontSize: 26,
+                  fontSize: 22,
                   color: Colors.white,
                   fontWeight: FontWeight.bold),
             ),
@@ -108,7 +108,7 @@ class MyApp extends StatelessWidget {
               // Test out the list view
               Container(
                 height: 300,
-                width: 430,
+                width: 350,
                 decoration: BoxDecoration(
                     color: Colors.amber,
                     borderRadius: BorderRadius.circular(20)),
@@ -119,14 +119,14 @@ class MyApp extends StatelessWidget {
                 children: [
                   // 1st Row
                   Padding(
-                    padding: const EdgeInsets.only(left: 25, right: 10),
+                    padding: const EdgeInsets.only(left: 20, top: 20),
                     child: Column(
                       children: [
                         //
                         // #1 box
                         Container(
-                          height: 200,
-                          width: 200,
+                          height: 170,
+                          width: 170,
                           decoration: BoxDecoration(
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
@@ -138,8 +138,8 @@ class MyApp extends StatelessWidget {
                         //
                         // // #2 box
                         Container(
-                          height: 200,
-                          width: 200,
+                          height: 170,
+                          width: 170,
                           decoration: BoxDecoration(
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
@@ -151,8 +151,8 @@ class MyApp extends StatelessWidget {
                         //
                         // #3 box
                         Container(
-                          height: 200,
-                          width: 200,
+                          height: 170,
+                          width: 170,
                           decoration: BoxDecoration(
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
@@ -167,14 +167,14 @@ class MyApp extends StatelessWidget {
 
                   // 2nd Row
                   Padding(
-                    padding: const EdgeInsets.all(25.0),
+                    padding: const EdgeInsets.only(left: 20, top: 20),
                     child: Column(
                       children: [
                         //
                         // #4 box
                         Container(
-                          height: 200,
-                          width: 200,
+                          height: 170,
+                          width: 170,
                           decoration: BoxDecoration(
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
@@ -186,8 +186,8 @@ class MyApp extends StatelessWidget {
                         //
                         // #5 box
                         Container(
-                          height: 200,
-                          width: 200,
+                          height: 170,
+                          width: 170,
                           decoration: BoxDecoration(
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
@@ -199,8 +199,8 @@ class MyApp extends StatelessWidget {
                         //
                         // #6 box
                         Container(
-                          height: 200,
-                          width: 200,
+                          height: 170,
+                          width: 170,
                           decoration: BoxDecoration(
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20)),
@@ -232,7 +232,7 @@ class MyApp extends StatelessWidget {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.flash_on),
-              label: 'Thunder',
+              label: 'Explore',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
