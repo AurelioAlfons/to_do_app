@@ -47,90 +47,132 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
+
+        // Body => SearchField, Containers
         body: Column(
           children: [
-            // ignore: avoid_unnecessary_containers
-            const Padding(
-              padding: EdgeInsets.only(top: 30, left: 20, right: 20),
-              // ignore: avoid_unnecessary_containers
-              child: Material(
-                  elevation: 5,
-                  borderRadius: BorderRadius.all(Radius.circular(30)),
-                  child: TextField(
-                    decoration: InputDecoration(
-                        hoverColor: Colors.white,
-                        fillColor: Colors.white,
-                        filled: true,
-                        hintText: 'Search item',
-                        border: OutlineInputBorder(
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(30))),
-                        prefixIcon: Icon(
-                          Icons.search,
-                          color: Colors.white,
-                        )),
-                  )),
+            //
+            // SearchField
+            //
+            Container(
+              margin: const EdgeInsets.only(top: 40, left: 20, right: 20),
+              decoration: BoxDecoration(
+                color: Colors
+                    .transparent, // Ensure the container itself has no background color
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.11),
+                    blurRadius: 60,
+                    spreadRadius: 0.0,
+                  )
+                ],
+                borderRadius: BorderRadius.circular(
+                    20), // Match the border radius of the TextField
+              ),
+              child: const TextField(
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: Colors
+                      .white, // Set the background of the TextField itself
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(
+                        Radius.circular(20)), // Same border radius
+                    borderSide:
+                        BorderSide.none, // Remove the default border outline
+                  ),
+                  hoverColor: Colors.white,
+                  hintText: 'Search Items',
+                  hintStyle: TextStyle(
+                    color: Color.fromARGB(255, 69, 69, 69),
+                  ),
+                  // Search Icon
+                  prefixIcon: Icon(
+                    Icons.search,
+                  ),
+                ),
+              ),
             ),
+
+            // 2 Rows (left & right)
             Row(
               children: [
+                // 1st Row
                 Padding(
                   padding: const EdgeInsets.only(left: 25, right: 10),
                   child: Column(
                     children: [
-                      // ignore: sized_box_for_whitespace
+                      //
+                      // #1 box
                       Container(
                         height: 200,
                         width: 200,
                         color: Colors.amber,
                       ),
+                      // Space
                       const SizedBox(
                         height: 30,
                       ),
+                      //
+                      // // #2 box
                       Container(
                         height: 200,
                         width: 200,
                         color: Colors.amber,
                       ),
+                      // Space
                       const SizedBox(
                         height: 30,
                       ),
+                      //
+                      // #3 box
                       Container(
                         height: 200,
                         width: 200,
                         color: Colors.amber,
                       ),
+                      // Space
                       const SizedBox(
                         height: 30,
                       ),
                     ],
                   ),
                 ),
+
+                // 2nd Row
                 Padding(
                   padding: const EdgeInsets.all(25.0),
                   child: Column(
                     children: [
-                      // ignore: sized_box_for_whitespace
+                      //
+                      // #4 box
                       Container(
                         height: 200,
                         width: 200,
                         color: Colors.amber,
                       ),
+                      // Space
                       const SizedBox(
                         height: 30,
                       ),
+                      //
+                      // #5 box
                       Container(
                         height: 200,
                         width: 200,
                         color: Colors.amber,
                       ),
+                      // Space
                       const SizedBox(
                         height: 30,
                       ),
+                      //
+                      // #6 box
                       Container(
                         height: 200,
                         width: 200,
                         color: Colors.amber,
                       ),
+                      // Space
                       const SizedBox(
                         height: 30,
                       ),
