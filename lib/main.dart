@@ -17,8 +17,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 96, 92, 191),
+
+        // AppBar
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 108, 4, 255),
+          backgroundColor: const Color(0xFF6C04FF),
           shadowColor: Colors.black,
           elevation: 10,
           // Put an icon on the left (leading)
@@ -49,166 +51,187 @@ class MyApp extends StatelessWidget {
         ),
 
         // Body => SearchField, Containers
-        body: ListView(
-          children: [
-            Column(
-              children: [
-                //
-                // SearchField
-                //
-                Container(
-                  margin: const EdgeInsets.only(top: 40, left: 20, right: 20),
-                  decoration: BoxDecoration(
-                    color: Colors
-                        .transparent, // Ensure the container itself has no background color
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.11),
-                        blurRadius: 60,
-                        spreadRadius: 0.0,
-                      )
-                    ],
-                    borderRadius: BorderRadius.circular(
-                        20), // Match the border radius of the TextField
-                  ),
-                  child: const TextField(
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors
-                          .white, // Set the background of the TextField itself
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(
-                            Radius.circular(20)), // Same border radius
-                        borderSide: BorderSide
-                            .none, // Remove the default border outline
-                      ),
-                      hoverColor: Colors.white,
-                      hintText: 'Search Items',
-                      hintStyle: TextStyle(
-                        color: Color.fromARGB(255, 69, 69, 69),
-                      ),
-                      // Search Icon
-                      prefixIcon: Icon(
-                        Icons.search,
-                      ),
-                    ),
-                  ),
-                ),
-
-                const SizedBox(
-                  height: 20,
-                ),
-
-                // Test out the list view
-                Container(
-                  height: 300,
-                  width: 430,
-                  decoration: BoxDecoration(
-                      color: Colors.amber,
-                      borderRadius: BorderRadius.circular(20)),
-                ),
-
-                // 2 Rows (left & right)
-                Row(
-                  children: [
-                    // 1st Row
-                    Padding(
-                      padding: const EdgeInsets.only(left: 25, right: 10),
-                      child: Column(
-                        children: [
-                          //
-                          // #1 box
-                          Container(
-                            height: 200,
-                            width: 200,
-                            decoration: BoxDecoration(
-                                color: Colors.amber,
-                                borderRadius: BorderRadius.circular(20)),
-                          ),
-                          // Space
-                          const SizedBox(
-                            height: 30,
-                          ),
-                          //
-                          // // #2 box
-                          Container(
-                            height: 200,
-                            width: 200,
-                            decoration: BoxDecoration(
-                                color: Colors.amber,
-                                borderRadius: BorderRadius.circular(20)),
-                          ),
-                          // Space
-                          const SizedBox(
-                            height: 30,
-                          ),
-                          //
-                          // #3 box
-                          Container(
-                            height: 200,
-                            width: 200,
-                            decoration: BoxDecoration(
-                                color: Colors.amber,
-                                borderRadius: BorderRadius.circular(20)),
-                          ),
-                          // Space
-                          const SizedBox(
-                            height: 10,
-                          ),
-                        ],
-                      ),
-                    ),
-
-                    // 2nd Row
-                    Padding(
-                      padding: const EdgeInsets.all(25.0),
-                      child: Column(
-                        children: [
-                          //
-                          // #4 box
-                          Container(
-                            height: 200,
-                            width: 200,
-                            decoration: BoxDecoration(
-                                color: Colors.amber,
-                                borderRadius: BorderRadius.circular(20)),
-                          ),
-                          // Space
-                          const SizedBox(
-                            height: 30,
-                          ),
-                          //
-                          // #5 box
-                          Container(
-                            height: 200,
-                            width: 200,
-                            decoration: BoxDecoration(
-                                color: Colors.amber,
-                                borderRadius: BorderRadius.circular(20)),
-                          ),
-                          // Space
-                          const SizedBox(
-                            height: 30,
-                          ),
-                          //
-                          // #6 box
-                          Container(
-                            height: 200,
-                            width: 200,
-                            decoration: BoxDecoration(
-                                color: Colors.amber,
-                                borderRadius: BorderRadius.circular(20)),
-                          ),
-                          // Space
-                          const SizedBox(
-                            height: 10,
-                          ),
-                        ],
-                      ),
-                    ),
+        body: SingleChildScrollView(
+          // Added SingleChildScrollView to prevent layout issues
+          child: Column(
+            children: [
+              //
+              // SearchField
+              //
+              Container(
+                margin: const EdgeInsets.only(top: 40, left: 20, right: 20),
+                decoration: BoxDecoration(
+                  color: Colors
+                      .transparent, // Ensure the container itself has no background color
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.11),
+                      blurRadius: 60,
+                      spreadRadius: 0.0,
+                    )
                   ],
+                  borderRadius: BorderRadius.circular(
+                      20), // Match the border radius of the TextField
                 ),
-              ],
+                child: const TextField(
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors
+                        .white, // Set the background of the TextField itself
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(
+                          Radius.circular(20)), // Same border radius
+                      borderSide:
+                          BorderSide.none, // Remove the default border outline
+                    ),
+                    hoverColor: Colors.white,
+                    hintText: 'Search Items',
+                    hintStyle: TextStyle(
+                      color: Color.fromARGB(255, 69, 69, 69),
+                    ),
+                    // Search Icon
+                    prefixIcon: Icon(
+                      Icons.search,
+                    ),
+                  ),
+                ),
+              ),
+
+              const SizedBox(
+                height: 20,
+              ),
+
+              // Test out the list view
+              Container(
+                height: 300,
+                width: 430,
+                decoration: BoxDecoration(
+                    color: Colors.amber,
+                    borderRadius: BorderRadius.circular(20)),
+              ),
+
+              // 2 Rows (left & right)
+              Row(
+                children: [
+                  // 1st Row
+                  Padding(
+                    padding: const EdgeInsets.only(left: 25, right: 10),
+                    child: Column(
+                      children: [
+                        //
+                        // #1 box
+                        Container(
+                          height: 200,
+                          width: 200,
+                          decoration: BoxDecoration(
+                              color: Colors.amber,
+                              borderRadius: BorderRadius.circular(20)),
+                        ),
+                        // Space
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        //
+                        // // #2 box
+                        Container(
+                          height: 200,
+                          width: 200,
+                          decoration: BoxDecoration(
+                              color: Colors.amber,
+                              borderRadius: BorderRadius.circular(20)),
+                        ),
+                        // Space
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        //
+                        // #3 box
+                        Container(
+                          height: 200,
+                          width: 200,
+                          decoration: BoxDecoration(
+                              color: Colors.amber,
+                              borderRadius: BorderRadius.circular(20)),
+                        ),
+                        // Space
+                        const SizedBox(
+                          height: 10,
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  // 2nd Row
+                  Padding(
+                    padding: const EdgeInsets.all(25.0),
+                    child: Column(
+                      children: [
+                        //
+                        // #4 box
+                        Container(
+                          height: 200,
+                          width: 200,
+                          decoration: BoxDecoration(
+                              color: Colors.amber,
+                              borderRadius: BorderRadius.circular(20)),
+                        ),
+                        // Space
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        //
+                        // #5 box
+                        Container(
+                          height: 200,
+                          width: 200,
+                          decoration: BoxDecoration(
+                              color: Colors.amber,
+                              borderRadius: BorderRadius.circular(20)),
+                        ),
+                        // Space
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        //
+                        // #6 box
+                        Container(
+                          height: 200,
+                          width: 200,
+                          decoration: BoxDecoration(
+                              color: Colors.amber,
+                              borderRadius: BorderRadius.circular(20)),
+                        ),
+                        // Space
+                        const SizedBox(
+                          height: 10,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+
+        bottomNavigationBar: BottomNavigationBar(
+          backgroundColor:
+              const Color(0xFF6C04FF), // Change this to your preferred color
+          selectedItemColor: Colors.yellow, // Color for the selected item
+          unselectedItemColor:
+              Colors.white.withOpacity(0.7), // Color for the unselected items
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.flash_on),
+              label: 'Thunder',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: 'Profile',
             ),
           ],
         ),
