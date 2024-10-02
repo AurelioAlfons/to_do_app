@@ -11,9 +11,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // MaterialApp = Widget that sets up app
+    // Structure and Navigation
     return const MaterialApp(
+      // Remove the Debug Banner Flag
       debugShowCheckedModeBanner: false,
-      home: HomePage(), // Use HomePage instead of Scaffold
+      // home: = Sets the main page when running the app
+      home: HomePage(),
     );
   }
 }

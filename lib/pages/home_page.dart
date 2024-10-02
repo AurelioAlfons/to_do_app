@@ -1,11 +1,38 @@
 // home.dart
 import 'package:flutter/material.dart';
+import 'package:to_do_app/pages/explore_page.dart';
+import 'package:to_do_app/widget/navigation.dart';
 
-class HomePage extends StatelessWidget {
+// Create class HomePage
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  int _currentIndex = 0;
+
+  // Define the list of pages
+  // ignore: unused_field
+  final List<Widget> _pages = [
+    const HomePage(),
+    const ExplorePage(),
+  ];
+
+  void _onTap(int index) {
+    // Correct the setState syntax
+    setState(() {
+      _currentIndex = index;
+      // Add any navigation logic here
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
+    // Scaffold
     return Scaffold(
       // Bg Color
       backgroundColor: const Color.fromARGB(255, 96, 92, 191),
@@ -64,7 +91,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.black.withOpacity(0.11),
                     blurRadius: 60,
                     spreadRadius: 0.0,
-                  )
+                  ),
                 ],
                 borderRadius: BorderRadius.circular(20),
               ),
@@ -85,9 +112,12 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 20),
+            // Create distance space
+            const SizedBox(
+              height: 20,
+            ),
 
-            // Test out the list view
+            // Main image container
             Container(
               height: 350,
               width: 350,
@@ -102,9 +132,10 @@ class HomePage extends StatelessWidget {
             ),
 
             // 2 Rows (left & right)
+            // 2 Rows (left & right)
             Row(
               children: [
-                // 1st Row
+                // 1st Column
                 Padding(
                   padding: const EdgeInsets.only(left: 20, top: 20),
                   child: Column(
@@ -155,7 +186,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
 
-                // 2nd Row
+                // 2nd Column
                 Padding(
                   padding: const EdgeInsets.only(left: 20, top: 20),
                   child: Column(
@@ -207,30 +238,14 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-          ],
+          ], // End of column children
         ),
       ),
 
       // Bottom NavBar
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: const Color(0xFF6C04FF),
-        selectedItemColor: Colors.yellow,
-        unselectedItemColor: Colors.white.withOpacity(0.7),
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.flash_on),
-            label: 'Explore',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-          ),
-        ],
-      ),
+      // Here we call the buildBottomNavBar widget
+      // From the navigation.dart
+      bottomNavigationBar: buildBottomNavBar(_currentIndex, _onTap),
     );
   }
 }
