@@ -1,6 +1,6 @@
 // home.dart
 import 'package:flutter/material.dart';
-import 'package:to_do_app/pages/explore_page.dart';
+import 'package:to_do_app/pages/explore_content.dart';
 import 'package:to_do_app/pages/home_content.dart'; // Import the HomeContent widget
 import 'package:to_do_app/widget/navigation.dart';
 
@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   // Define the list of pages
   final List<Widget> _pages = [
     const HomeContent(), // Use HomeContent from its own file
-    const ExplorePage(),
+    const ExploreContent(),
   ];
 
   void _onTap(int index) {
